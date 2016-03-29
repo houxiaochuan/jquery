@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+        .wrapper{position: relative;width:1000px;height:313px;overflow: hidden;}
+	    .num{position :absolute;top :200px; left :40px;}
+	    /*.box{position: relative;}*/
+	    .box {position: absolute;}
+	    span{width:20px;height:20px;background-color: #fff;display: inline-block;margin:4px;text-align: center;}
+	</style>
+</head>
+<body>
+    <div class = "container">
+	<div class = "wrapper">
+	    <div class="box">
+			<img src = "image/1.jpg" >
+			<img src = "image/2.jpg" >
+			<img src = "image/3.jpg" >
+		</div>
+	    <div class = "num">
+		    <span>1</span>
+		    <span>2</span>
+		    <span>3</span>
+	    </div>
+    </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
