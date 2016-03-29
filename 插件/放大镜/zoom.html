@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>放大镜</title>
+</head>
+<body>
+<span class='zoom' id='ex1'>
+		<img src='daisy.jpg' width='555' height='320' alt='Daisy on the Ohoopee'/>
+		<p>Hover</p>
+	</span>
+<a href="bigger1.jpg"  id="bigger" ><img src="images/1.jpg"  alt=""></a>
+<script src="jquery.js" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="js.js"></script> -->
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" src="jquery.zoom.js"></script>
+<script type="text/javascript">
+	$(function({
+        $('#bigger').zoom({ on:'click' });
+	}))
+</script>
+</body>
+</html>

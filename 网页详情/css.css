@@ -1,0 +1,43 @@
+#header{background: url(images/headerbg.png);}
+.wrapper{margin: 0 auto;width: 990px;position: relative;}
+.logo,.search{display: inline-block;}
+.logo{margin-left: 16px;}
+.search{margin-left: 30px;}
+.searchInput{height: 27px;line-height: 27px;width: 200px;position:absolute;left: 200px;top: 20px;}
+.skin{float: right;background-image: url(images/theme.gif);}
+.nav{background-color: #4a4a4a;}
+.nav ul{padding: 10px 0px;}
+.nav ul li{display: inline;}
+.nav ul li a{color: #fff;padding:0px 16px;}
+.fore{display: none;position:absolute;left: 130px;top: 101px;width: 474px;border: 1px solid #b1b1b1;border-top:none;z-index: 3;
+      background-color: #fff;padding: 10px;}
+#header dt a{margin-top: 5px;padding :0px;}
+dt {float:left;padding-bottom: 6px;}
+dt a {display: block;width: 50px;height: 50px;}
+dd{margin-bottom: 10px;padding-top: 6px;padding-right: 10px;}
+.nav ul li dl a {color: #000;}
+
+/*商品分类*/
+#content{margin-top: 10px;}
+#items{width: 184px;height :558px;overflow: hidden;border:1px solid #4a4a4a;float: left;margin-right: 4px;}
+#items h1{background-color: #4a4a4a;display: block;padding:5px 10px;}
+.itemsWrap{padding: 8px;}
+#items h2{padding:5px;}
+#items ul li{display: inline-block;width: 77px;height: 24px;padding-left: 2px;}
+
+/*右侧广告*/
+#imageRoll{float: left;margin-right: 4px;position: relative;}
+#imageRoll div{position: absolute;bottom:0;text-align: center;}
+#imageRoll div a {display: inline-block;width: 79px;height:32px;padding: 5px 15px;/*overflow: hidden;*/
+	             margin-right: 1px;float: left;background-color: #444;color: #fff;}
+#imageRoll a em{display: block;}
+#notice ul li {padding:2px;}
+#notice ul li a{padding-left:4px;}
+
+#brandActivity{float: right;margin-top: 20px;}
+#brandActivity .brandItems {border-bottom: 1px solid #e4e4e4;}
+#brandActivity h1{display: inline-block;}
+#brandActivity ul li{float: right;padding: 0px 6px;background-color: #e4e4e4;color: #000;margin-right:10px;}
+#brandList{overflow: hidden;width: 790px;height:188px;}
+#brandList a {float: left;margin-right: 14px;}
+#brandList span{display: block;width:183px; height:24px;text-align: center;background-color: #e4e4e4;}

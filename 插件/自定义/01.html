@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>自定义一个jquery插件</title>
+    <script src="http://www.imooc.com/data/jquery-1.8.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class = "box">
+	<ul>
+    	<li>列表1</li>
+    	<li>列表2</li>
+        <li>列表3</li>
+    </ul>
+</div>
+
+   <script type="text/javascript">
+        (function($){
+        	$.extend({
+                "liFocus": function(li){
+                    li.css("background-color","#ccc");
+                },
+                "liBlur": function(li){
+                	li.css("background-color","#fff")
+                }
+        	});
+        })(jQuery);
+
+        $(function(){
+            $('.box li').hover(
+                function(){
+                    $.liFocus($(this));
+                },
+                function(){
+                	$.liBlur($(this));
+                });
+        })
+   </script>
+</body>
+</html>

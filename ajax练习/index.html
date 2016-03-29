@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>挑战题</title>
+        <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    </head>
+    <body>
+        <button type="button" id="btn">加载</button>
+        <div id="box"></div>
+        <script type="text/javascript">
+        $(function(){
+            var jsonStu=[
+                {name: '编号1',age: 20,sex: '女'},
+                {name: '编号2',age: 30,sex: '男'},
+                {name: '编号3',age: 40,sex: '女'},
+            ];
+            var content = '';
+
+            $('#btn').click(function(){
+                $.each(jsonStu , function(index, stu){
+                    $('#box').append('<p>'+ '姓名：'+stu.name+"<br/>"+"年龄:"+stu.age+'</p>');
+                });
+            })
+        })
+        </script>
+    </body>
+</html>
